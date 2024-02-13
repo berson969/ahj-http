@@ -8,6 +8,7 @@ branches:
 cache: node_modules  # кеширование
 
 install:
+  - echo Current Directory: %cd%
   - chdir backend
   - npm install  # команда установки зависимостей
 
