@@ -8,9 +8,9 @@ branches:
 cache: node_modules  # кеширование
 
 install:
-  - echo "Hello, World!"
-  - echo "Current Directory:" %cd%
-  - chdir backend
+#  - echo "Hello, World!"
+#  - echo "Current Directory:" %cd%
+#  - chdir backend
   - npm install  # команда установки зависимостей
 
 build: off  # отключаем встроенную в appveyor систему сборки
