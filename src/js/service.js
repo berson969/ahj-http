@@ -1,5 +1,5 @@
 // const TICKET_BASE_URL = 'https://ahj-live-dnd-http.onrender.com'
-const TICKET_BASE_URL = "http://localhost:7071";
+const TICKET_BASE_URL = "/";
 
 // XMLHttpRequest -- старый -- axios
 // Fetch API -- без библиотек
