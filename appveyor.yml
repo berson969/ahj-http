@@ -8,6 +8,7 @@ environment:
 install:
   - export nodejs_version="18"
   - curl -fsSL https://deb.nodesource.com/setup_$nodejs_version.x | sudo -E bash -
+  - sudo wget -q -O - https://dl.google.com/linux/linux_signing_key.pub | sudo apt-key add -
   - sudo apt-get install -y nodejs
   - sudo apt-get update
   - node --version
