@@ -1,5 +1,6 @@
 // const TICKET_BASE_URL = 'https://ahj-live-dnd-http.onrender.com'
-const TICKET_BASE_URL = process.env.BACKEND_URL || "/";
+const PORT = 7071;
+const TICKET_BASE_URL = process.env.URL || `http://localhost:${PORT}/`
 
 // XMLHttpRequest -- старый -- axios
 // Fetch API -- без библиотек
