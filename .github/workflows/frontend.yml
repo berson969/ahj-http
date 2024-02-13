@@ -16,6 +16,7 @@ jobs:
     environment:
       name: github-actions
       url: ${{ steps.deployment.outputs.page_url }}
+      backend_url: "https://berson969.github.io/ahj-http/"
 
     strategy:
       matrix:

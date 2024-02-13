@@ -1,5 +1,5 @@
 // const TICKET_BASE_URL = 'https://ahj-live-dnd-http.onrender.com'
-const TICKET_BASE_URL = "/";
+const TICKET_BASE_URL = process.env.BACKEND_URL || "/";
 
 // XMLHttpRequest -- старый -- axios
 // Fetch API -- без библиотек
