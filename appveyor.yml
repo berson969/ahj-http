@@ -8,11 +8,10 @@ branches:
 cache: node_modules  # кеширование
 
 install:
+  - cd backend/
   - npm install  # команда установки зависимостей
 
 build: off  # отключаем встроенную в appveyor систему сборки
 
 build_script:
-  - npm run build   # команда сборки
-  - cd backend/
   - npm run dev
