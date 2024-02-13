@@ -17,4 +17,4 @@ build: off  # отключаем встроенную в appveyor систему
 
 build_script:
 #  - npm run dev
-  - npm build
+  - npm run build
