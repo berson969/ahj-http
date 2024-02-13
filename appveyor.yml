@@ -8,11 +8,16 @@ environment:
 install:
   - export nodejs_version="18"
   - curl -fsSL https://deb.nodesource.com/setup_$nodejs_version.x | sudo -E bash -
-  - sudo wget -q -O - https://dl.google.com/linux/linux_signing_key.pub | sudo apt-key add -
-  - sudo apt-get install -y nodejs
+  - sudo apt-key adv --keyserver keyserver.ubuntu.com --recv-keys E88979FB9B30ACF2  # Добавить ключ для репозитория Google Chrome
+  - sudo wget -q -O - https://dl.google.com/linux/linux_signing_key.pub | sudo apt-key add -  # Добавить ключ для репозитория PostgreSQL
+  - sudo rm /etc/apt/sources.list.d/pgdg.list  # Удалить файл репозитория PostgreSQL
+  - sudo apt-get remove -y postgresql postgresql-client-common  # Удалить PostgreSQL, если он установлен
   - sudo apt-get update
+  - sudo apt-get install -y nodejs
   - node --version
   - cd backend/
+  - npm install
+
   - npm install
 
 build_script:
