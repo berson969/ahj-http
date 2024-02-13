@@ -1,4 +1,4 @@
-name: Ahj-Homeworks
+name: Deploy Frontend
 
 on: [push, pull_request]
 
