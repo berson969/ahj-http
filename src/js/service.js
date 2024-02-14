@@ -1,6 +1,6 @@
 // const TICKET_BASE_URL = 'https://ahj-live-dnd-http.onrender.com'
-const PORT = 7071;
-const TICKET_BASE_URL = process.env.URL || `http://localhost:${PORT}/`
+// const TICKET_BASE_URL = `http://localhost:7071/`;
+const TICKET_BASE_URL = "https://http-server-s26l.onrender.com"
 
 // XMLHttpRequest -- старый -- axios
 // Fetch API -- без библиотек
@@ -49,6 +49,7 @@ export class TicketService {
     url.searchParams.append("method", "ticketById");
     url.searchParams.append("id", ticketId); // экранизируются
     const response = await fetch(url);
+    console.log(response);
     return await response.json();
   }
 
