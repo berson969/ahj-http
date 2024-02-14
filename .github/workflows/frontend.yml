@@ -19,7 +19,11 @@ jobs:
 
     strategy:
       matrix:
+<<<<<<< HEAD
         node-version: [20.x]
+=======
+        node-version: [18.x]
+>>>>>>> eb79d06 (chg frontend.yml 4)
 
     steps:
       - uses: actions/checkout@v3
@@ -45,7 +49,7 @@ jobs:
         uses: actions/configure-pages@v2
 
       - name: Upload artifact
-        uses: actions/upload-pages-artifact@v3
+        uses: actions/upload-pages-artifact@v1
         with:
           path: 'dist'
 
