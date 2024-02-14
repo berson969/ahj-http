@@ -41,16 +41,13 @@ jobs:
       - name: Build
         run: npm run build
 
-      - name: Copy build to public directory
-        run: cp -r dist/* public/
-
       - name: Setup Pages
         uses: actions/configure-pages@v2
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: 'public'
+          path: 'dist'
 
       - name: Deploy to GitHub Pages
         id: deployment
